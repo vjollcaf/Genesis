@@ -1,0 +1,122 @@
+.screen{
+    margin:61px 125px 47px 126px;
+    font-family: 'Mulish', sans-serif;
+    width: 1360px;
+    height:3840px ;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar__menu{
+    display: flex;
+    flex-direction: row;
+    gap: 29px;
+    margin-right: 125px;
+}
+
+.menu__item{
+    list-style: none;
+    font-family: 'Mulish';
+    font-weight:bold;
+    line-height: 23px;
+    color:black;
+    font-size:18px;
+}
+
+.logo--name{
+    font-family: 'Mulish';
+    font-weight: bolder;
+    color: solid #111111;
+}
+
+.designer__content{
+    display: grid;
+    grid-template-columns: 635px 212px;
+    grid-template-rows: 2;
+    justify-content: space-between;
+}
+
+.designer--saying{
+    grid-column: 4/2;
+    display: grid;
+    justify-content: left;
+    align-self: end;
+    grid-row: 2;
+}
+
+.intro__content--info{
+    grid-column: 1/2;
+    grid-row: 1 / 2;
+    display: grid;
+    align-items: center;
+    margin-top: 96px;
+}
+
+h1{
+    font-family:bold;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.designer--blue, .intro__content--info p{
+    color: #4A4FF2;
+}
+
+.intro__content--info p{
+    font-weight: 700;
+    font-style: normal;
+    font-size:22px;
+    line-height: 27.61px;
+    letter-spacing: -0.44px;
+}
+.designer--saying p{
+    font-style: italic;
+    font-style: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    color: black;
+    opacity: 50%;
+}
+
+.designer--saying::after{
+    content: "";
+    border-top: 10px black;
+    width: 40px;
+}
+
+.designer__work__container{
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    grid-template-rows: repeat(4, 25em);
+    grid-gap: 15px;
+ 
+}
+
+
+.desirnger__work--nohead{
+    grid-area: 1/1/3/2;
+}
+
+.desirnger__work--manglass{
+    grid-area: 1/2/3/3;
+}
+
+.desirnger__work--flowerhead{
+    grid-area: 1/3/2/4;
+}
+
+.desirnger__work--cactus{
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.desirnger__work--statue{
+    grid-area: 2/2/2/3
+}
+
+.desirnger__work--manmoon{
+    grid-area: 3/1/4/2;
+
+}
