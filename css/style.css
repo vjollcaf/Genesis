@@ -1,8 +1,7 @@
-.screen{
-    margin:61px 125px 47px 126px;
+.container{
+    margin:auto;
     font-family: 'Mulish', sans-serif;
     width: 1360px;
-    height:3840px ;
 }
 
 .navbar{
@@ -14,7 +13,7 @@
     display: flex;
     flex-direction: row;
     gap: 29px;
-    margin-right: 125px;
+
 }
 
 .menu__item{
@@ -81,49 +80,53 @@ h1{
     opacity: 50%;
 }
 
-.designer--saying::after{
+.designer--saying::before{
     content: "";
-    border-top: 10px black;
-    width: 40px;
+   width:40px;
+    height: 2px;
+    display: block;
+    background-color: black;
 }
 
-.designer__work__container{
+
+
+
+
+.designer {
     display: grid;
-    grid-template-columns: repeat(3, 20%);
-    grid-template-rows: repeat(4, auto);
-    grid-gap: 15px;
- 
+    grid-template-columns: repeat(3, 33%);
+    gap: 20px;
+    margin-bottom: 91px;
+    margin-top: 144px;
 }
 
-
-.desirnger__work--nohead{
-    grid-area: 1/1/3/2;
-}
-
-.desirnger__work--manglass{
-    grid-area: 1/2/3/3;
-}
-
-.desirnger__work--flowerhead{
-    grid-area: 1/3/2/4;
-}
-
-.desirnger__work--cactus{
-    grid-area: 2 / 1 / 3 / 2;
-}
-
-.desirnger__work--statue{
-    grid-area: 2/2/2/3
-}
-
-.desirnger__work--manmoon{
-    grid-area: 3/1/4/2;
-
-}
-
-
-img{
-    object-fit: cover;
+.designer__image{
+    margin-bottom: 20px;
     width: 100%;
-    height: 100%;
+     
+}
+
+
+.service{
+    display: flex;
+    flex-direction: row;
+}
+
+.service__heading{
+    
+     width: 635px;
+    font-size: 28px;
+    font-family: 'Mulish';
+    font-weight: bold;
+    line-height: 48px;
+}
+
+.service__list{
+    width: 350px;
+    margin-left: auto;
+}
+.service__item{
+    width: 50%;
+    float: left;
+    margin-bottom: 10px;
 }
