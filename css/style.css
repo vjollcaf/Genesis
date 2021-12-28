@@ -29,6 +29,7 @@
     font-family: 'Mulish';
     font-weight: bolder;
     color: solid #111111;
+    font-size: 28px;
 }
 
 .designer__content{
@@ -86,6 +87,7 @@ h1{
     height: 2px;
     display: block;
     background-color: black;
+    opacity: 50%;
 }
 
 
@@ -152,16 +154,13 @@ h1{
     gap: 58px;
 
     justify-content: space-between;
-    margin-bottom: 197px;
+    margin-bottom: 60px;
 }
 
 .award__item{
     width: 30%;
 }
-.footer{
-    display: flex;
-    justify-content: space-between;
-}
+
 
 .item__title{
     margin-bottom: 30px;
@@ -170,9 +169,12 @@ h1{
 .item__year{
     width: 20%;
     margin-left: auto;
+    font-weight: 400 !important; 
+    opacity: 1 !important;
+
 }
 
-.awwwards::before, .footer{
+.awwwards::before{
     content: "";
     width: 1360px;
     height: 2px;
@@ -183,7 +185,55 @@ h1{
     padding-top: 48px;
 }
 
-.awards__row:last-child{
-    margin-bottom: 0;
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
 }
 
+.awards::after{
+    content: "";
+    width: 1360px;
+    height: 2px;
+    background-color: #D8D8D8;
+    /* margin-bottom: 114px; */
+}
+
+
+h3, li{
+    font-weight: 700;
+    font-family: 'Mulish';
+    font-style: 18px;
+}
+
+.award__item:last-of-type{
+    margin-bottom: 57px;
+}
+
+.awards p{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: #111111;
+    opacity: 60%;
+}
+
+.footer__social{
+    display: flex;
+    gap: 30px;
+    color: #111111;
+    font-size: 28px;
+}
+
+.footer__links{
+    display: flex;
+    gap: 95px;
+}
+
+.footer__social i{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
